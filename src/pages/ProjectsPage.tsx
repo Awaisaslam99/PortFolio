@@ -79,7 +79,7 @@ const allProjects = [
     status: 'completed',
     description:
       'Built a deep learning pipeline for MRI-based brain tumor detection and segmentation to streamline medical scan analysis. Leveraged SynthSeg and nnU-Net V2 to achieve high-accuracy lesion segmentation and structural volume calculations. Successfully integrated automated clinical insight generation to map baseline datasets and support diagnostic workflows.',
-    technologies: ['Django', 'PostgreSQL', 'AI Models', 'React js', 'Redis', 'Celery'],
+    technologies: ['Django', 'PostgreSQL', 'AI Models', 'React.js', 'Redis', 'Celery'],
     icon: Brain,
     gradient: 'bg-gradient-to-br from-cyan-500 to-blue-600',
   },
@@ -89,8 +89,8 @@ const allProjects = [
     period: 'Jan 2026 – June 2026',
     status: 'completed',
     description:
-      'Developed an AI news platform featuring automated web scraping, efficient article storage, and LLM-based summary generation. Integrated Google Text-to-Speech (gTTS) to automatically produce audio narration for published news items. Delivered a streamlined, centralized dashboard built with Django and React to monitor and manage the entire automated pipeline.',
-    technologies: ['Django', 'React', 'LLM', 'PostgreSQL', 'gTTS', 'PlayWright', 'Celery', 'Redis'],
+      'Developed an AI news platform featuring automated web scraping, efficient article storage, and LLM-based summary generation. Integrated Google Text-to-Speech (gTTS) to automatically produce audio narration for published news items. Delivered a streamlined, centralized dashboard built with Django and React.js to monitor and manage the entire automated pipeline.',
+    technologies: ['Django', 'React.js', 'LLM', 'PostgreSQL', 'gTTS', 'PlayWright', 'Celery', 'Redis'],
     icon: Newspaper,
     gradient: 'bg-gradient-to-br from-purple-500 to-violet-600',
   },
@@ -101,7 +101,7 @@ const allProjects = [
     status: 'completed',
     description:
       'Architected a Real Estate AI Agent system powered by OpenAI LLM models and built with a robust Django and PostgreSQL backend. Integrated tier-based subscription plans—ranging from basic to enterprise—managed securely through Stripe payment solutions. The platform captures tailored user specifications via dynamic forms, embedding those preferences directly into LLM prompts to deliver highly customized real estate agent personalities.',
-    technologies: ['Django', 'AI Models', 'Stripe', 'React', 'PostgreSQL'],
+    technologies: ['Django', 'AI Models', 'Stripe', 'React.js', 'PostgreSQL'],
     icon: Building,
     gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
   },
@@ -157,7 +157,7 @@ const allProjects = [
     status: 'completed',
     description:
       'Designed and engineered a dynamic, real-time communication platform built on a backend architecture of Flask, WebSockets, and SQLite. The system leverages secure REST APIs protected by JWT authentication to manage seamless data exchanges and user sessions. To enhance the user experience, the platform integrates advanced AI models that power intelligent features, including predictive next-word suggestions and deep chat analytics.',
-    technologies: ['Python', 'Flask', 'React', 'SQL', 'Web Sockets', 'AI Models'],
+    technologies: ['Python', 'Flask', 'React.js', 'SQL', 'Web Sockets', 'AI Models'],
     icon: MessageSquare,
     gradient: 'bg-gradient-to-br from-blue-500 to-indigo-600',
   },
