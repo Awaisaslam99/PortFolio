@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design Tokens ── */
+:root {
+  --color-base: #080C14;
+  --color-electric: #00D9FF;
+  --color-violet: #7C3AED;
+  --color-electric-glow: rgba(0, 217, 255, 0.15);
+  --color-violet-glow: rgba(124, 58, 237, 0.15);
+}
+
+/* ── Global Base ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-base);
+  font-family: 'Inter', system-ui, sans-serif;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+/* ── Typography ── */
+.font-display {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ── Gradient Text ── */
+.gradient-text {
+  background: linear-gradient(135deg, #00D9FF 0%, #7C3AED 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-electric {
+  background: linear-gradient(135deg, #00D9FF 0%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Aurora Hero Background ── */
+.aurora-bg {
+  background: linear-gradient(
+    125deg,
+    #080C14 0%,
+    #0a1628 20%,
+    #0d1f3c 35%,
+    #080C14 50%,
+    #0d0f1a 65%,
+    #130d26 80%,
+    #080C14 100%
+  );
+  background-size: 400% 400%;
+  animation: aurora 12s ease infinite;
+}
+
+@keyframes aurora {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ── Subtle Grid Overlay ── */
+.grid-overlay {
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 59px,
+      rgba(0, 217, 255, 0.04) 59px,
+      rgba(0, 217, 255, 0.04) 60px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 59px,
+      rgba(0, 217, 255, 0.04) 59px,
+      rgba(0, 217, 255, 0.04) 60px
+    );
+}
+
+/* ── Glow Utilities ── */
+.glow-electric {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.25), 0 0 60px rgba(0, 217, 255, 0.08);
+}
+
+.glow-violet {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.25), 0 0 60px rgba(124, 58, 237, 0.08);
+}
+
+.text-glow {
+  text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+}
+
+/* ── Custom Cursor ── */
+html.has-custom-cursor,
+html.has-custom-cursor * {
+  cursor: none !important;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-electric);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--color-electric);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.cursor-ring.hovering {
+  width: 52px;
+  height: 52px;
+  opacity: 0.3;
+  border-color: var(--color-violet);
+}
+
+/* ── Scroll Progress Bar ── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  z-index: 9997;
+  background: linear-gradient(90deg, var(--color-electric), var(--color-violet));
+  transform-origin: left center;
+}
+
+/* ── Experience Timeline ── */
+.timeline-line {
+  position: absolute;
+  left: 1.75rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--color-electric), transparent);
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--color-base);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(1.75rem - 7px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-dot-electric {
+  background: var(--color-electric);
+  box-shadow: 0 0 10px var(--color-electric);
+}
+
+.timeline-dot-violet {
+  background: var(--color-violet);
+  box-shadow: 0 0 10px var(--color-violet);
+}
+
+/* ── Glassmorphism ── */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080C14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00D9FF, #7C3AED);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #38ecff, #8b5cf6);
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(0, 217, 255, 0.25);
+  color: white;
+}
+
+/* ── Focus Styles ── */
+*:focus-visible {
+  outline: 2px solid rgba(0, 217, 255, 0.6);
+  outline-offset: 2px;
+}
+
+/* ── Form Input Glow on Focus ── */
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.3) !important;
+}
+
+/* ── Hover Lift (kept for non-Framer elements) ── */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Performance Hints ── */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* ── Print Styles ── */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ── Accessibility: Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .aurora-bg {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
