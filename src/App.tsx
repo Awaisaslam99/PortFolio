@@ -485,7 +485,7 @@ function App() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <p className="text-gray-500 text-sm">Showing 6 of 12 Projects</p>
+            <p className="text-gray-500 text-sm">Showing 6 of 14 Projects</p>
             <motion.button
               onClick={() => navigate('/projects')}
               className="inline-flex items-center gap-3 px-8 py-4 bg-electric-500 text-base-900 rounded-2xl font-display font-semibold glow-electric hover:bg-electric-400 transition-colors shadow-2xl"

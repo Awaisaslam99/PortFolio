@@ -455,10 +455,10 @@ export default function ProjectsPage() {
             viewport={viewportOnce}
           >
             {[
-              { value: '12', label: 'Total Projects' },
+              { value: '14', label: 'Total Projects' },
               { value: '5', label: 'At InsightLix' },
-              { value: '4', label: 'At Programmer Force' },
-              { value: '3', label: 'InternShips' },
+              { value: '5', label: 'At Programmer Force' },
+              { value: '4', label: 'InternShips' },
             ].map((stat, i) => (
               <motion.div
                 key={i}
