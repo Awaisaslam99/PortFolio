@@ -78,7 +78,7 @@ const badges = [
   { label: 'AI/ML',     Icon: Brain,     delay: 0 },
   { label: 'Python',    Icon: Languages, delay: 1.2 },
   { label: 'FastAPI',   Icon: Code,      delay: 0.4 },
-  { label: 'Django',   Icon: Code,      delay: 0.4 },
+  { label: 'Django',   Icon: Server,      delay: 0.4 },
   { label: "LLM's",    Icon: Bot,       delay: 0.8 },
   { label: 'Databases', Icon: Zap,       delay: 1.6 },
 ];
