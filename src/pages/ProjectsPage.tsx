@@ -162,6 +162,17 @@ const allProjects = [
     gradient: 'bg-gradient-to-br from-blue-500 to-indigo-600',
   },
   {
+    title: 'AI-Powered White Label Pay-Per-Minute Call Platform',
+    company: 'Programmer Force',
+    period: 'June 2025 – Dec 2025',
+    status: 'completed',
+    description:
+      'Built an AI-powered pay-per-minute calling platform by engineering its backend infrastructure using FastAPI, Stripe, Twilio, and Role-Based Access Control (RBAC). Developed advanced AI voice agents integrated with RAG-based knowledge base workflows to deliver intelligent, real-time automated support. Enhanced system security and user verification.',
+    technologies: ['FastAPI', 'MongoDB', 'Twilio', 'Stripe', 'ElevenLabs', 'AI'],
+    icon: PhoneCall,
+    gradient: 'bg-gradient-to-br from-green-500 to-emerald-600',
+  },
+  {
     title: 'Restaurant Order Management System',
     company: 'Programmer Force',
     period: 'June 2025 – Dec 2025',
@@ -183,17 +194,6 @@ const allProjects = [
     technologies: ['Flask', 'HuggingFace', 'SQLite', 'Redis', 'Celery'],
     icon: Car,
     gradient: 'bg-gradient-to-br from-orange-500 to-red-600',
-  },
-  {
-    title: 'AI-Powered White Label Pay-Per-Minute Call Platform',
-    company: 'InternShips',
-    period: 'Dec 2024 – Jan 2025',
-    status: 'completed',
-    description:
-      'Contributed to an AI-powered pay-per-minute calling platform by engineering its backend infrastructure using FastAPI, Stripe, Twilio, and Role-Based Access Control (RBAC). Developed advanced AI voice agents integrated with RAG-based knowledge base workflows to deliver intelligent, real-time automated support. Enhanced system security and user verification.',
-    technologies: ['FastAPI', 'MongoDB', 'Twilio', 'Stripe', 'ElevenLabs', 'AI'],
-    icon: PhoneCall,
-    gradient: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
   {
     title: 'MCP-MultiTool AI Agent',
