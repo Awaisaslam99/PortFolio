@@ -31,6 +31,7 @@ import {
   Menu,
   X,
   ArrowLeft,
+  FileText,
 } from 'lucide-react';
 import { ScrollProgress } from '../components/ScrollProgress';
 import { fadeInUp, scaleIn, staggerContainer, viewportOnce } from '../lib/motionVariants';
@@ -187,7 +188,7 @@ const allProjects = [
   {
     title: 'Automatic Number Plate Recognition System',
     company: 'InternShips',
-    period: 'March 2025 – May 2025',
+    period: 'Dec 2024 – Jan 2025',
     status: 'completed',
     description:
       'Contributed to an Automatic Number Plate Recognition (ANPR) system, leveraging Flask and Hugging Face models to detect vehicles and license plates. Implemented robust attribute recognition to identify vehicle plate details, color, category, and model. Engineered the data pipeline to store all captured recognition logs securely within an SQLite database.',
@@ -198,7 +199,7 @@ const allProjects = [
   {
     title: 'MCP-MultiTool AI Agent',
     company: 'InternShips',
-    period: 'Sept 2024 – Dec 2024',
+    period: 'March 2025 – May 2025',
     status: 'completed',
     description:
       'Developed an MCP-based multi-tool AI agent using LangChain and the Google API to support dynamic task handling. The system seamlessly integrates an intelligent chatbot, mathematical computation, and a real-time weather assistant as callable tools. This architecture enables the agent to autonomously select and execute the optimal tool based on user intent.',
@@ -206,6 +207,28 @@ const allProjects = [
     icon: Bot ,
     gradient: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
+  {
+  title: 'Document Reader RAG-Agent',
+  company: 'InternShips',
+  period: 'March 2025 – May 2025',
+  status: 'completed',
+  description:
+    'Developed a Retrieval-Augmented Generation (RAG) application using LangChain and the Google Gemini API, enabling users to upload PDF and text documents and interact with them through natural language conversations. Implemented document chunking, semantic embeddings, and vector-based retrieval to provide accurate, context-aware responses from uploaded content.',
+  technologies: ['LangChain', 'Google Gemini API', 'RAG', 'Vector Database', 'Python'],
+  icon: FileText,
+  gradient: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+},
+{
+  title: 'Video Summarizer RAG-Agent',
+  company: 'InternShips',
+  period: 'March 2025 – May 2025',
+  status: 'completed',
+  description:
+    'Built an AI-powered video analysis and summarization system using Agno (formerly Phidata) and the Google Gemini API. The application processes uploaded videos, generates concise summaries, and enables users to ask context-aware questions through a conversational interface. Leveraged Retrieval-Augmented Generation (RAG) to deliver accurate responses based on video content.',
+  technologies: ['Agno (Phidata)', 'Google Gemini API', 'RAG', 'LangChain', 'Python'],
+  icon: Video,
+  gradient: 'bg-gradient-to-br from-purple-500 to-pink-600',
+},
 ];
 
 type FilterType = 'All' | 'InsightLix' | 'Programmer Force' | 'InternShips';
