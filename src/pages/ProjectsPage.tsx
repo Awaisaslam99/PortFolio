@@ -455,50 +455,30 @@ export default function ProjectsPage() {
             viewport={viewportOnce}
           >
             {[
-              { value: '14', label: 'Total Projects' },
-              { value: '5', label: 'At InsightLix' },
-              { value: '5', label: 'At Programmer Force' },
-              { value: '4', label: 'InternShips' },
+              { value: String(allProjects.length), label: 'Total Projects', filter: 'All' as FilterType },
+              { value: String(getCount('InsightLix')), label: 'At InsightLix', filter: 'InsightLix' as FilterType },
+              { value: String(getCount('Programmer Force')), label: 'At Programmer Force', filter: 'Programmer Force' as FilterType },
+              { value: String(getCount('InternShips')), label: 'InternShips', filter: 'InternShips' as FilterType },
             ].map((stat, i) => (
-              <motion.div
+              <motion.button
                 key={i}
                 variants={scaleIn}
                 custom={i * 0.08}
-                className="bg-white/5 border border-white/10 rounded-2xl px-7 py-4 text-center hover:border-electric-500/20 hover:bg-white/8 transition-colors duration-300"
+                onClick={() => setActiveFilter(stat.filter)}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className={`bg-white/5 border rounded-2xl px-7 py-4 text-center transition-colors duration-300 cursor-pointer ${
+                  activeFilter === stat.filter
+                    ? 'border-electric-500/50 bg-electric-500/10'
+                    : 'border-white/10 hover:border-electric-500/30 hover:bg-white/10'
+                }`}
               >
                 <div className="font-display text-2xl font-bold text-electric-500">{stat.value}</div>
                 <div className="text-gray-400 text-xs mt-1">{stat.label}</div>
-              </motion.div>
+              </motion.button>
             ))}
           </motion.div>
         </motion.div>
-      </section>
-
-      {/* ── Filter chips ── */}
-      <section className="pb-10 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap justify-center gap-3">
-            {FILTERS.map((filter) => (
-              <motion.button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold border transition-colors duration-200 ${
-                  activeFilter === filter
-                    ? 'bg-electric-500 text-base-900 border-transparent glow-electric'
-                    : 'bg-white/5 border-white/10 text-gray-300 hover:bg-white/10 hover:border-electric-500/30 hover:text-white'
-                }`}
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-              >
-                {filter}
-                <span className="ml-2 text-xs opacity-70">({getCount(filter)})</span>
-              </motion.button>
-            ))}
-          </div>
-          <p className="text-center text-gray-500 text-sm mt-4">
-            Showing {filteredProjects.length} project{filteredProjects.length !== 1 ? 's' : ''}
-          </p>
-        </div>
       </section>
 
       {/* ── Projects Grid ── */}
