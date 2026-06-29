@@ -31,6 +31,7 @@ import {
   Menu,
   X,
   ArrowLeft,
+  Video,
   FileText,
 } from 'lucide-react';
 import { ScrollProgress } from '../components/ScrollProgress';
