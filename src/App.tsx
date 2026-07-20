@@ -286,7 +286,7 @@ function App() {
   const skillCategories = [
     {
       title: 'AI & Machine Learning',
-      skills: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'LangChain', 'LangGraph', 'RAG', 'AI Agents', 'Generative AI', 'MCP'],
+      skills: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'LangChain', 'LangGraph', 'RAG', 'AI Agents', 'Generative AI', 'Computer Vision' ,'MCP', 'HuggingFace'],
       icon: Brain,
     },
     {
@@ -316,7 +316,7 @@ function App() {
   ];
 
   const experience = [
-    { position: 'AI / Python Engineer', company: 'InsightLix Pvt Ltd', duration: 'Jan 2026 – June 2026', isCurrent: false },
+    { position: 'AI / Python Engineer', company: 'Insightlix (Private) Limited', duration: 'Jan 2026 – June 2026', isCurrent: false },
     { position: 'Associate Data Scientist', company: 'Programmer Force', duration: 'June 2025 – Dec 2025', isCurrent: false },
     { position: 'AI Engineer Intern', company: 'Octaloop Technologies', duration: 'March 2025 - May 2025', isCurrent: false },
     { position: 'Machine Learning Intern', company: 'PITB', duration: 'Dec 2024 – Jan 2025', isCurrent: false },
@@ -362,8 +362,8 @@ function App() {
               >
                 {[
                   { number: 'AI', label: 'Specialist' },
-                  { number: '10+', label: 'Projects Built' },
-                  { number: '1+', label: 'Years Experience' },
+                  { number: '15', label: 'Projects Built' },
+                  { number: '2', label: 'Years Experience' },
                   { number: '100%', label: 'Dedication' },
                 ].map((stat, index) => (
                   <motion.div
@@ -485,7 +485,7 @@ function App() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <p className="text-gray-500 text-sm">Showing 6 of 14 Projects</p>
+            <p className="text-gray-500 text-sm">Showing 6 of 15 Projects</p>
             <motion.button
               onClick={() => navigate('/projects')}
               className="inline-flex items-center gap-3 px-8 py-4 bg-electric-500 text-base-900 rounded-2xl font-display font-semibold glow-electric hover:bg-electric-400 transition-colors shadow-2xl"

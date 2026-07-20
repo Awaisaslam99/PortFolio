@@ -66,17 +66,17 @@ function BackToTopButton() {
 
 // ── Company badge config ──
 const COMPANY_CONFIG: Record<string, { color: string; bg: string; border: string }> = {
-  InsightLix: { color: 'text-electric-400', bg: 'bg-electric-500/10', border: 'border-electric-500/25' },
+  'Insightlix (Private) Limited': { color: 'text-electric-400', bg: 'bg-electric-500/10', border: 'border-electric-500/25' },
   'Programmer Force': { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/25' },
   InternShips: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/25' },
 };
 
 // ── All projects data ──
 const allProjects = [
-  // ── InsightLix ──
+  // ── Insightlix (Private) Limited ──
   {
     title: 'Brain Tumor Detection Model',
-    company: 'InsightLix',
+    company: 'Insightlix (Private) Limited',
     period: 'Jan 2026 – June 2026',
     status: 'completed',
     description:
@@ -87,7 +87,7 @@ const allProjects = [
   },
   {
     title: 'AI News System',
-    company: 'InsightLix',
+    company: 'Insightlix (Private) Limited',
     period: 'Jan 2026 – June 2026',
     status: 'completed',
     description:
@@ -98,7 +98,7 @@ const allProjects = [
   },
   {
     title: 'Estate AI Agent',
-    company: 'InsightLix',
+    company: 'Insightlix (Private) Limited',
     period: 'Jan 2026 – June 2026',
     status: 'completed',
     description:
@@ -108,8 +108,19 @@ const allProjects = [
     gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
   },
   {
+    title: 'Personal AI Assistant (n8n & Streamlit)',
+    company: 'Insightlix (Private) Limited',
+    period: 'June 2026 – July 2026',
+    status: 'completed',
+    description:
+      'Engineered an advanced autonomous AI Agent workflow inside n8n powered by the Google Gemini Chat Model and smart memory components. Connected the agent to a suite of custom Google Workspace tools (Calendar, Gmail, Tasks, Notes) alongside Google Search and an Expense Tracking sheet. Built a modern Streamlit chat UI that interacts instantly with the n8n webhook manager to process natural language user requests.',
+    technologies: ['n8n', 'Streamlit', 'Google Gemini', 'Python', 'Webhooks', 'Google Workspace'],
+    icon: Bot,
+    gradient: 'bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-600',
+  },
+  {
     title: 'Automation Web-Scrapping',
-    company: 'InsightLix',
+    company: 'Insightlix (Private) Limited',
     period: 'Jan 2026 – June 2026',
     status: 'completed',
     description:
@@ -120,7 +131,7 @@ const allProjects = [
   },
   {
     title: 'Enterprise Resource Planning (ERP) System',
-    company: 'InsightLix',
+    company: 'Insightlix (Private) Limited',
     period: 'Jan 2026 – June 2026',
     status: 'completed',
     description:
@@ -232,8 +243,8 @@ const allProjects = [
 },
 ];
 
-type FilterType = 'All' | 'InsightLix' | 'Programmer Force' | 'InternShips';
-const FILTERS: FilterType[] = ['All', 'InsightLix', 'Programmer Force', 'InternShips'];
+type FilterType = 'All' | 'Insightlix (Private) Limited' | 'Programmer Force' | 'InternShips';
+const FILTERS: FilterType[] = ['All', 'Insightlix (Private) Limited', 'Programmer Force', 'InternShips'];
 
 function ProjectDetailCard({ project }: { project: (typeof allProjects)[0] }) {
   const Icon = project.icon;
@@ -456,7 +467,7 @@ export default function ProjectsPage() {
           >
             {[
               { value: String(allProjects.length), label: 'Total Projects', filter: 'All' as FilterType },
-              { value: String(getCount('InsightLix')), label: 'At InsightLix', filter: 'InsightLix' as FilterType },
+              { value: String(getCount('Insightlix (Private) Limited')), label: 'At Insightlix (Private) Limited', filter: 'Insightlix (Private) Limited' as FilterType },
               { value: String(getCount('Programmer Force')), label: 'At Programmer Force', filter: 'Programmer Force' as FilterType },
               { value: String(getCount('InternShips')), label: 'InternShips', filter: 'InternShips' as FilterType },
             ].map((stat, i) => (

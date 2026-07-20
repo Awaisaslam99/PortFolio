@@ -155,13 +155,11 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           </motion.div>
 
           <motion.div variants={fadeInUp} custom={0.1} className="space-y-3">
-            <p className="text-lg text-gray-400 font-medium">Hi, I'm</p>
             <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight gradient-text-electric">
               Muhammad Awais Aslam
             </h1>
-            <div className="text-2xl lg:text-3xl font-display font-semibold text-gray-300">
-              Full Stack <span className="text-electric-500">AI Developer</span> /{' '}
-              Python <span className="text-electric-500">Developer</span>
+            <div className="text-xl lg:text-2xl font-display font-semibold text-gray-300 tracking-wide">
+              Full Stack <span className="text-electric-500">AI Developer</span> / <span className="text-electric-500">Python</span> Developer
             </div>
           </motion.div>
 
