@@ -75,20 +75,20 @@ const COMPANY_CONFIG: Record<string, { color: string; bg: string; border: string
 const allProjects = [
   // ── Insightlix (Private) Limited ──
   {
-    title: 'Brain Tumor Detection Model',
+    title: 'Market Research AI Agent',
     company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – June 2026',
+    period: 'Jan 2026 – July 2026',
     status: 'completed',
     description:
-      'Built a deep learning pipeline for MRI-based brain tumor detection and segmentation to streamline medical scan analysis. Leveraged SynthSeg and nnU-Net V2 to achieve high-accuracy lesion segmentation and structural volume calculations. Successfully integrated automated clinical insight generation to map baseline datasets and support diagnostic workflows.',
-    technologies: ['Django', 'PostgreSQL', 'AI Models', 'React.js', 'Redis', 'Celery'],
-    icon: Brain,
-    gradient: 'bg-gradient-to-br from-cyan-500 to-blue-600',
+  'Built a multi-agent market research system using CrewAI, with specialized AI agents for market analysis, competitive intelligence, customer insights, product strategy, and business analysis. The system performs web-based research across market reports, competitor websites, reviews, forums, and industry sources to analyze market size, trends, competitors, customer needs, and risks, then synthesizes the findings into comprehensive, data-driven business reports and recommendations.',
+    technologies: ['Python', 'CrewAI', 'LLM', 'Web Search'],
+    icon: BarChart3,
+    gradient: 'bg-gradient-to-br from-blue-500 to-indigo-600',
   },
   {
     title: 'AI News System',
     company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – June 2026',
+    period: 'Jan 2026 – July 2026',
     status: 'completed',
     description:
       'Developed an AI news platform featuring automated web scraping, efficient article storage, and LLM-based summary generation. Integrated Google Text-to-Speech (gTTS) to automatically produce audio narration for published news items. Delivered a streamlined, centralized dashboard built with Django and React.js to monitor and manage the entire automated pipeline.',
@@ -99,29 +99,40 @@ const allProjects = [
   {
     title: 'Estate AI Agent',
     company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – June 2026',
+    period: 'Jan 2026 – July 2026',
     status: 'completed',
     description:
       'Architected a Real Estate AI Agent system powered by OpenAI LLM models and built with a robust Django and PostgreSQL backend. Integrated tier-based subscription plans—ranging from basic to enterprise—managed securely through Stripe payment solutions. The platform captures tailored user specifications via dynamic forms, embedding those preferences directly into LLM prompts to deliver highly customized real estate agent personalities.',
-    technologies: ['Django', 'AI Models', 'Stripe', 'React.js', 'PostgreSQL'],
+    technologies: ['Django', 'LLM', 'Stripe', 'React.js', 'PostgreSQL'],
     icon: Building,
     gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
   },
   {
-    title: 'Personal AI Assistant (n8n & Streamlit)',
+    title: 'Personal AI Assistant',
     company: 'Insightlix (Private) Limited',
     period: 'June 2026 – July 2026',
     status: 'completed',
     description:
       'Engineered an advanced autonomous AI Agent workflow inside n8n powered by the Google Gemini Chat Model and smart memory components. Connected the agent to a suite of custom Google Workspace tools (Calendar, Gmail, Tasks, Notes) alongside Google Search and an Expense Tracking sheet. Built a modern Streamlit chat UI that interacts instantly with the n8n webhook manager to process natural language user requests.',
-    technologies: ['n8n', 'Streamlit', 'Google Gemini', 'Python', 'Webhooks', 'Google Workspace'],
+    technologies: ['n8n', 'Streamlit', 'AI Agent', 'Python', 'Webhooks', 'Google Workspace'],
     icon: Bot,
     gradient: 'bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-600',
   },
   {
+    title: 'Brain Tumor Detection Model',
+    company: 'Insightlix (Private) Limited',
+    period: 'Jan 2026 – July 2026',
+    status: 'completed',
+    description:
+      'Built a deep learning pipeline for MRI-based brain tumor detection and segmentation to streamline medical scan analysis. Leveraged SynthSeg and nnU-Net V2 to achieve high-accuracy lesion segmentation and structural volume calculations. Successfully integrated automated clinical insight generation to map baseline datasets and support diagnostic workflows.',
+    technologies: ['Django', 'PostgreSQL', 'AI Models', 'React.js', 'Redis', 'Celery'],
+    icon: Brain,
+    gradient: 'bg-gradient-to-br from-cyan-500 to-blue-600',
+  },
+  {
     title: 'Automation Web-Scrapping',
     company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – June 2026',
+    period: 'Jan 2026 – July 2026',
     status: 'completed',
     description:
       'Engineered an automated web scraping pipeline to extract dynamic showtimes, seat availability, and screen formats from multiple theater websites. To guarantee absolute technical accuracy, the system cross-references this raw data with internal pipeline data before using FastAPI to automatically classify and export the validated information into structured Excel formats.',
@@ -132,13 +143,24 @@ const allProjects = [
   {
     title: 'Enterprise Resource Planning (ERP) System',
     company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – June 2026',
+    period: 'Jan 2026 – July 2026',
     status: 'completed',
     description:
       'Built a modern ERP & Accounting Management System using Django, DRF, and PostgreSQL for managing clients, invoices, payments, and financial operations, with future-ready API architecture and planned FBR Digital Invoicing integration.',
     technologies: ['Django', 'HTML5', 'CSS3', 'PostgreSQL'],
     icon: BarChart3,
     gradient: 'bg-gradient-to-br from-green-500 to-emerald-600',
+  },
+  {
+    title: 'AI Blog Writer',
+    company: 'Insightlix (Private) Limited',
+    period: 'Jan 2026 – July 2026',
+    status: 'completed',
+    description:
+      'Built a multi-agent CrewAI workflow to research topics and generate detailed reports with current and future trends. Automated conversion of research reports into simple, engaging blog posts using LLM agents.',
+    technologies: ['Python', 'CrewAI', 'LLM', 'AI Agents'],
+    icon: Newspaper,
+    gradient: 'bg-gradient-to-br from-purple-500 to-violet-600',
   },
   // ── Programmer Force ──
   {
@@ -193,7 +215,7 @@ const allProjects = [
     description:
       'Developed a Django-based Restaurant Order Management System featuring seamless QR code menu access and secure Stripe payment integration. The platform automates customer order placement, routes orders directly to the kitchen in real time, and provides dynamic order tracking. This full-stack solution optimizes restaurant workflows and enhances the overall dining experience.',
     technologies: ['Django', 'JavaScript', 'Stripe', 'SQLite'],
-    icon: UtensilsCrossed ,
+    icon: UtensilsCrossed,
     gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
   },
   // ── InternShips ──
@@ -216,31 +238,31 @@ const allProjects = [
     description:
       'Developed an MCP-based multi-tool AI agent using LangChain and the Google API to support dynamic task handling. The system seamlessly integrates an intelligent chatbot, mathematical computation, and a real-time weather assistant as callable tools. This architecture enables the agent to autonomously select and execute the optimal tool based on user intent.',
     technologies: ['LangChain', 'MCP', 'AI Model', 'SQLite'],
-    icon: Bot ,
+    icon: Bot,
     gradient: 'bg-gradient-to-br from-green-500 to-emerald-600',
   },
   {
-  title: 'Document Reader RAG-Agent',
-  company: 'InternShips',
-  period: 'March 2025 – May 2025',
-  status: 'completed',
-  description:
-    'Developed a Retrieval-Augmented Generation (RAG) application using LangChain and the Google Gemini API, enabling users to upload PDF and text documents and interact with them through natural language conversations. Implemented document chunking, semantic embeddings, and vector-based retrieval to provide accurate, context-aware responses from uploaded content.',
-  technologies: ['LangChain', 'Google Gemini API', 'RAG', 'Vector Database', 'Python'],
-  icon: FileText,
-  gradient: 'bg-gradient-to-br from-blue-500 to-cyan-600',
-},
-{
-  title: 'Video Summarizer RAG-Agent',
-  company: 'InternShips',
-  period: 'March 2025 – May 2025',
-  status: 'completed',
-  description:
-    'Built an AI-powered video analysis and summarization system using Agno (formerly Phidata) and the Google Gemini API. The application processes uploaded videos, generates concise summaries, and enables users to ask context-aware questions through a conversational interface. Leveraged Retrieval-Augmented Generation (RAG) to deliver accurate responses based on video content.',
-  technologies: ['Agno (Phidata)', 'Google Gemini API', 'RAG', 'LangChain', 'Python'],
-  icon: Video,
-  gradient: 'bg-gradient-to-br from-purple-500 to-pink-600',
-},
+    title: 'Document Reader RAG-Agent',
+    company: 'InternShips',
+    period: 'March 2025 – May 2025',
+    status: 'completed',
+    description:
+      'Developed a Retrieval-Augmented Generation (RAG) application using LangChain and the LLM, enabling users to upload PDF and text documents and interact with them through natural language conversations. Implemented document chunking, semantic embeddings, and vector-based retrieval to provide accurate, context-aware responses from uploaded content.',
+    technologies: ['LangChain', 'LLM', 'RAG', 'Vector Database', 'Python'],
+    icon: FileText,
+    gradient: 'bg-gradient-to-br from-blue-500 to-cyan-600',
+  },
+  {
+    title: 'Video Summarizer RAG-Agent',
+    company: 'InternShips',
+    period: 'March 2025 – May 2025',
+    status: 'completed',
+    description:
+      'Built an AI-powered video analysis and summarization system using Agno (formerly Phidata) and the LLM. The application processes uploaded videos, generates concise summaries, and enables users to ask context-aware questions through a conversational interface. Leveraged Retrieval-Augmented Generation (RAG) to deliver accurate responses based on video content.',
+    technologies: ['Agno (Phidata)', 'LLM', 'RAG', 'LangChain', 'Python'],
+    icon: Video,
+    gradient: 'bg-gradient-to-br from-purple-500 to-pink-600',
+  },
 ];
 
 type FilterType = 'All' | 'Insightlix (Private) Limited' | 'Programmer Force' | 'InternShips';
@@ -478,11 +500,10 @@ export default function ProjectsPage() {
                 onClick={() => setActiveFilter(stat.filter)}
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}
-                className={`bg-white/5 border rounded-2xl px-7 py-4 text-center transition-colors duration-300 cursor-pointer ${
-                  activeFilter === stat.filter
+                className={`bg-white/5 border rounded-2xl px-7 py-4 text-center transition-colors duration-300 cursor-pointer ${activeFilter === stat.filter
                     ? 'border-electric-500/50 bg-electric-500/10'
                     : 'border-white/10 hover:border-electric-500/30 hover:bg-white/10'
-                }`}
+                  }`}
               >
                 <div className="font-display text-2xl font-bold text-electric-500">{stat.value}</div>
                 <div className="text-gray-400 text-xs mt-1">{stat.label}</div>

@@ -192,12 +192,12 @@ function App() {
       link: '#',
     },
     {
-      title: 'Brain Tumor Segmentation Model',
+      title: 'Market Research AI Agent',
       description:
-        'Built a deep learning pipeline for MRI-based brain tumor detection and segmentation to streamline medical scan analysis. Leveraged SynthSeg and nnU-Net V2 to achieve high-accuracy lesion segmentation and structural volume calculations. Successfully integrated automated clinical insight generation to map baseline baseline datasets and support diagnostic workflows.',
-      technologies: ['Django', 'PostgreSQL', 'AI Models', 'React.js', 'Redis', 'Celery'],
-      icon: Brain ,
-      gradient: 'bg-gradient-to-br from-cyan-500 to-blue-600',
+        'Built a multi-agent CrewAI system for market research, competitor analysis, customer insights, and product strategy. Automated web research and generated data-driven business reports.',
+      technologies: ['Python', 'CrewAI', 'LLM', 'Web Search'],
+      icon: BarChart3,
+      gradient: 'bg-gradient-to-br from-blue-500 to-indigo-600',
       link: '#',
     },
     {
@@ -210,6 +210,15 @@ function App() {
       link: '#',
     },
     {
+      title: 'Real Estate AI Agent',
+      description:
+        'Architected a Real Estate AI Agent system powered by OpenAI LLM models and built with a robust Django and PostgreSQL backend. Integrated tier-based subscription plans—ranging from basic to enterprise—managed securely through Stripe payment solutions. The platform captures tailored user specifications via dynamic forms, embedding those preferences directly into LLM prompts to deliver highly customized real estate agent personalities.',
+      technologies: ['Django', 'AI Models', 'Stripe', 'React.js', 'PostgreSQL'],
+      icon: Building,
+      gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
+      link: '#',
+    },
+    {
       title: 'AI News System',
       description:
         'Developed an AI news platform featuring automated web scraping, efficient article storage, and LLM-based summary generation. Integrated Google Text-to-Speech (gTTS) to automatically produce audio narration for published news items. Delivered a streamlined, centralized dashboard built with Django and React to monitor and manage the entire automated pipeline.',
@@ -219,21 +228,21 @@ function App() {
       link: '#',
     },
     {
+      title: 'Brain Tumor Segmentation Model',
+      description:
+        'Built a deep learning pipeline for MRI-based brain tumor detection and segmentation to streamline medical scan analysis. Leveraged SynthSeg and nnU-Net V2 to achieve high-accuracy lesion segmentation and structural volume calculations. Successfully integrated automated clinical insight generation to map baseline baseline datasets and support diagnostic workflows.',
+      technologies: ['Django', 'PostgreSQL', 'AI Models', 'React.js', 'Redis', 'Celery'],
+      icon: Brain ,
+      gradient: 'bg-gradient-to-br from-cyan-500 to-blue-600',
+      link: '#',
+    },
+    {
       title: 'Enterprise Resource Planning (ERP) System',
       description:
         'Built a modern ERP & Accounting Management System using Django, DRF, and PostgreSQL for managing clients, invoices, payments, and financial operations, with future-ready API architecture and planned FBR Digital Invoicing integration.',
       technologies: ['Django', 'HTML5', 'CSS3', 'PostgreSQL'],
       icon: BarChart3,
       gradient: 'bg-gradient-to-br from-green-500 to-emerald-600',
-      link: '#',
-    },
-    {
-      title: 'Real Estate AI Agent',
-      description:
-        'Architected a Real Estate AI Agent system powered by OpenAI LLM models and built with a robust Django and PostgreSQL backend. Integrated tier-based subscription plans—ranging from basic to enterprise—managed securely through Stripe payment solutions. The platform captures tailored user specifications via dynamic forms, embedding those preferences directly into LLM prompts to deliver highly customized real estate agent personalities.',
-      technologies: ['Django', 'AI Models', 'Stripe', 'React.js', 'PostgreSQL'],
-      icon: Building,
-      gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
       link: '#',
     },
     {
@@ -281,27 +290,36 @@ function App() {
       gradient: 'bg-gradient-to-br from-red-500 to-orange-600',
       link: '#',
     },
+    {
+      title: 'AI Blog Writer',
+      description:
+        'Built a multi-agent CrewAI workflow to research topics and generate detailed reports with current and future trends. Automated conversion of research reports into simple, engaging blog posts using LLM agents.',
+      technologies: ['Python', 'CrewAI', 'LLM', 'AI Agents'],
+      icon: Newspaper,
+      gradient: 'bg-gradient-to-br from-purple-500 to-violet-600',
+      link: '#',
+    },
   ];
 
   const skillCategories = [
     {
       title: 'AI & Machine Learning',
-      skills: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'LangChain', 'LangGraph', 'RAG', 'AI Agents', 'Generative AI', 'Computer Vision' ,'MCP', 'HuggingFace'],
+      skills: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'LangChain', 'LangGraph', 'LangSmith', 'LlamaIndex', 'RAG', 'AI Agents', 'Fine Tuning', 'Generative AI', 'Computer Vision' ,'MCP', 'HuggingFace', 'CrewAI'],
       icon: Brain,
     },
     {
       title: 'Backend Development',
-      skills: ['FastAPI', 'Flask', 'Django', 'StreamLit', 'PostgreSQL', 'SQL', 'MongoDB', 'Pinecone', 'ChromaDB', 'FAISS', 'PageIndex', 'Fine Tuning'],
+      skills: ['Python', 'FastAPI', 'Flask', 'Django', 'StreamLit', 'PostgreSQL', 'MySQL', 'MongoDB', 'Pinecone', 'ChromaDB', 'FAISS', 'PageIndex'],
       icon: Code,
     },
     {
       title: 'Frontend Development',
-      skills: ['React.js', 'TailwindCSS', 'MERN Stack', 'JavaScript', 'HTML5', 'CSS3'],
+      skills: ['React.js', 'TailwindCSS', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3'],
       icon: Zap,
     },
     {
       title: 'Tools & Libraries',
-      skills: ['Power BI', 'Tableau', 'Seaborn', 'Plotly', 'Git & GitHub', 'Docker', 'Selenium', 'Playwright', 'BeautifulSoup', 'Celery', 'Ngrok', 'N8N'],
+      skills: ['Power BI', 'Tableau', 'Seaborn', 'Git & GitHub', 'Docker', 'Selenium', 'Playwright', 'BeautifulSoup', 'Celery', 'Ngrok', 'N8N', 'Zapier'],
       icon: Award,
     },
   ];
@@ -316,7 +334,7 @@ function App() {
   ];
 
   const experience = [
-    { position: 'AI / Python Engineer', company: 'Insightlix (Private) Limited', duration: 'Jan 2026 – June 2026', isCurrent: false },
+    { position: 'AI / Python Engineer', company: 'Insightlix (Private) Limited', duration: 'Jan 2026 – July 2026', isCurrent: false },
     { position: 'Associate Data Scientist', company: 'Programmer Force', duration: 'June 2025 – Dec 2025', isCurrent: false },
     { position: 'AI Engineer Intern', company: 'Octaloop Technologies', duration: 'March 2025 - May 2025', isCurrent: false },
     { position: 'Machine Learning Intern', company: 'PITB', duration: 'Dec 2024 – Jan 2025', isCurrent: false },
@@ -362,8 +380,8 @@ function App() {
               >
                 {[
                   { number: 'AI', label: 'Specialist' },
-                  { number: '15', label: 'Projects Built' },
-                  { number: '2', label: 'Years Experience' },
+                  { number: '15+', label: 'Projects Built' },
+                  { number: '1.5', label: 'Years Experience' },
                   { number: '100%', label: 'Dedication' },
                 ].map((stat, index) => (
                   <motion.div
@@ -485,7 +503,7 @@ function App() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <p className="text-gray-500 text-sm">Showing 6 of 15 Projects</p>
+            <p className="text-gray-500 text-sm">Showing 6 of 17 Projects</p>
             <motion.button
               onClick={() => navigate('/projects')}
               className="inline-flex items-center gap-3 px-8 py-4 bg-electric-500 text-base-900 rounded-2xl font-display font-semibold glow-electric hover:bg-electric-400 transition-colors shadow-2xl"
