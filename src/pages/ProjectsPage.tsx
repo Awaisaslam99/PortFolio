@@ -33,6 +33,9 @@ import {
   ArrowLeft,
   Video,
   FileText,
+  Users,
+  ShoppingCart,
+  ShieldCheck,
 } from 'lucide-react';
 import { ScrollProgress } from '../components/ScrollProgress';
 import { fadeInUp, scaleIn, staggerContainer, viewportOnce } from '../lib/motionVariants';
@@ -66,19 +69,52 @@ function BackToTopButton() {
 
 // ── Company badge config ──
 const COMPANY_CONFIG: Record<string, { color: string; bg: string; border: string }> = {
-  'Insightlix (Private) Limited': { color: 'text-electric-400', bg: 'bg-electric-500/10', border: 'border-electric-500/25' },
+  'Tron AI': { color: 'text-electric-400', bg: 'bg-electric-500/10', border: 'border-electric-500/25' },
   'Programmer Force': { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/25' },
   InternShips: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/25' },
 };
 
 // ── All projects data ──
 const allProjects = [
-  // ── Insightlix (Private) Limited ──
+  // ── Tron AI ──
+  {
+    title: 'ACT Angel Recruitment Portal',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
+    description:
+      'Developed a recruitment portal with candidate tracking, HR dashboards, RBAC, and Salesforce integration. Integrated AI voice agents and n8n workflows for candidate screening, interview scheduling, and status updates. Deployed on Vercel with AWS S3 storage.',
+    technologies: ['React.js', 'Salesforce', 'AI Voice Agents', 'n8n', 'AWS S3', 'Vercel'],
+    icon: Users,
+    gradient: 'bg-gradient-to-br from-indigo-500 to-blue-600',
+  },
+  {
+    title: 'Digvault – Digital Products E-Commerce Platform',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
+    description:
+      'Developed a digital marketplace with supplier integrations (G2G, G2A), product sync, automated pricing, and Stripe payments. Built admin dashboards, invoice management, API integrations, and managed VPS deployments, testing, and debugging.',
+    technologies: ['Stripe', 'API Integrations', 'Admin Dashboard', 'VPS'],
+    icon: ShoppingCart,
+    gradient: 'bg-gradient-to-br from-emerald-500 to-teal-600',
+  },
+  {
+    title: 'Nilpii – Privacy-First AI Chat Platform',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
+    description:
+      'Developed a multi-model AI chat platform integrating OpenAI/Claude/Mistral with secure APIs, database persistence, and VPS deployment. Implemented PII anonymization, secure document/image processing, OCR, and privacy safeguards.',
+    technologies: ['OpenAI', 'Claude', 'Mistral', 'OCR', 'PII Anonymization', 'VPS'],
+    icon: ShieldCheck,
+    gradient: 'bg-gradient-to-br from-violet-500 to-fuchsia-600',
+  },
   {
     title: 'Market Research AI Agent',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
   'Built a multi-agent market research system using CrewAI, with specialized AI agents for market analysis, competitive intelligence, customer insights, product strategy, and business analysis. The system performs web-based research across market reports, competitor websites, reviews, forums, and industry sources to analyze market size, trends, competitors, customer needs, and risks, then synthesizes the findings into comprehensive, data-driven business reports and recommendations.',
     technologies: ['Python', 'CrewAI', 'LLM', 'Web Search'],
@@ -87,9 +123,9 @@ const allProjects = [
   },
   {
     title: 'AI News System',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Developed an AI news platform featuring automated web scraping, efficient article storage, and LLM-based summary generation. Integrated Google Text-to-Speech (gTTS) to automatically produce audio narration for published news items. Delivered a streamlined, centralized dashboard built with Django and React.js to monitor and manage the entire automated pipeline.',
     technologies: ['Django', 'React.js', 'LLM', 'PostgreSQL', 'gTTS', 'PlayWright', 'Celery', 'Redis'],
@@ -98,9 +134,9 @@ const allProjects = [
   },
   {
     title: 'Estate AI Agent',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Architected a Real Estate AI Agent system powered by OpenAI LLM models and built with a robust Django and PostgreSQL backend. Integrated tier-based subscription plans—ranging from basic to enterprise—managed securely through Stripe payment solutions. The platform captures tailored user specifications via dynamic forms, embedding those preferences directly into LLM prompts to deliver highly customized real estate agent personalities.',
     technologies: ['Django', 'LLM', 'Stripe', 'React.js', 'PostgreSQL'],
@@ -109,9 +145,9 @@ const allProjects = [
   },
   {
     title: 'Personal AI Assistant',
-    company: 'Insightlix (Private) Limited',
-    period: 'June 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Engineered an advanced autonomous AI Agent workflow inside n8n powered by the Google Gemini Chat Model and smart memory components. Connected the agent to a suite of custom Google Workspace tools (Calendar, Gmail, Tasks, Notes) alongside Google Search and an Expense Tracking sheet. Built a modern Streamlit chat UI that interacts instantly with the n8n webhook manager to process natural language user requests.',
     technologies: ['n8n', 'Streamlit', 'AI Agent', 'Python', 'Webhooks', 'Google Workspace'],
@@ -120,9 +156,9 @@ const allProjects = [
   },
   {
     title: 'Brain Tumor Detection Model',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Built a deep learning pipeline for MRI-based brain tumor detection and segmentation to streamline medical scan analysis. Leveraged SynthSeg and nnU-Net V2 to achieve high-accuracy lesion segmentation and structural volume calculations. Successfully integrated automated clinical insight generation to map baseline datasets and support diagnostic workflows.',
     technologies: ['Django', 'PostgreSQL', 'AI Models', 'React.js', 'Redis', 'Celery'],
@@ -131,9 +167,9 @@ const allProjects = [
   },
   {
     title: 'Automation Web-Scrapping',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Engineered an automated web scraping pipeline to extract dynamic showtimes, seat availability, and screen formats from multiple theater websites. To guarantee absolute technical accuracy, the system cross-references this raw data with internal pipeline data before using FastAPI to automatically classify and export the validated information into structured Excel formats.',
     technologies: ['FastAPI', 'Playwright', 'Celery', 'Redis', 'Sqlite'],
@@ -142,9 +178,9 @@ const allProjects = [
   },
   {
     title: 'Enterprise Resource Planning (ERP) System',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Built a modern ERP & Accounting Management System using Django, DRF, and PostgreSQL for managing clients, invoices, payments, and financial operations, with future-ready API architecture and planned FBR Digital Invoicing integration.',
     technologies: ['Django', 'HTML5', 'CSS3', 'PostgreSQL'],
@@ -153,9 +189,9 @@ const allProjects = [
   },
   {
     title: 'AI Blog Writer',
-    company: 'Insightlix (Private) Limited',
-    period: 'Jan 2026 – July 2026',
-    status: 'completed',
+    company: 'Tron AI',
+    period: 'Jan 2026 – Present',
+    status: 'ongoing',
     description:
       'Built a multi-agent CrewAI workflow to research topics and generate detailed reports with current and future trends. Automated conversion of research reports into simple, engaging blog posts using LLM agents.',
     technologies: ['Python', 'CrewAI', 'LLM', 'AI Agents'],
@@ -265,8 +301,8 @@ const allProjects = [
   },
 ];
 
-type FilterType = 'All' | 'Insightlix (Private) Limited' | 'Programmer Force' | 'InternShips';
-const FILTERS: FilterType[] = ['All', 'Insightlix (Private) Limited', 'Programmer Force', 'InternShips'];
+type FilterType = 'All' | 'Tron AI' | 'Programmer Force' | 'InternShips';
+const FILTERS: FilterType[] = ['All', 'Tron AI', 'Programmer Force', 'InternShips'];
 
 function ProjectDetailCard({ project }: { project: (typeof allProjects)[0] }) {
   const Icon = project.icon;
@@ -489,7 +525,7 @@ export default function ProjectsPage() {
           >
             {[
               { value: String(allProjects.length), label: 'Total Projects', filter: 'All' as FilterType },
-              { value: String(getCount('Insightlix (Private) Limited')), label: 'At Insightlix (Private) Limited', filter: 'Insightlix (Private) Limited' as FilterType },
+              { value: String(getCount('Tron AI')), label: 'At Tron AI', filter: 'Tron AI' as FilterType },
               { value: String(getCount('Programmer Force')), label: 'At Programmer Force', filter: 'Programmer Force' as FilterType },
               { value: String(getCount('InternShips')), label: 'InternShips', filter: 'InternShips' as FilterType },
             ].map((stat, i) => (

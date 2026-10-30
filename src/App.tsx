@@ -30,6 +30,9 @@ import {
   Car,
   PhoneCall,
   Wrench,
+  Users,
+  ShoppingCart,
+  ShieldCheck,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -173,6 +176,33 @@ function App() {
   };
 
   const projects: Project[] = [
+    {
+      title: 'ACT Angel Recruitment Portal',
+      description:
+        'Developed a recruitment portal with candidate tracking, HR dashboards, RBAC, and Salesforce integration. Integrated AI voice agents and n8n workflows for candidate screening, interview scheduling, and status updates. Deployed on Vercel with AWS S3 storage.',
+      technologies: ['React.js', 'Salesforce', 'AI Voice Agents', 'n8n', 'AWS S3', 'Vercel'],
+      icon: Users,
+      gradient: 'bg-gradient-to-br from-indigo-500 to-blue-600',
+      link: '#',
+    },
+    {
+      title: 'Digvault – Digital Products E-Commerce Platform',
+      description:
+        'Developed a digital marketplace with supplier integrations (G2G, G2A), product sync, automated pricing, and Stripe payments. Built admin dashboards, invoice management, API integrations, and managed VPS deployments, testing, and debugging.',
+      technologies: ['Stripe', 'API Integrations', 'Admin Dashboard', 'VPS'],
+      icon: ShoppingCart,
+      gradient: 'bg-gradient-to-br from-emerald-500 to-teal-600',
+      link: '#',
+    },
+    {
+      title: 'Nilpii – Privacy-First AI Chat Platform',
+      description:
+        'Developed a multi-model AI chat platform integrating OpenAI/Claude/Mistral with secure APIs, database persistence, and VPS deployment. Implemented PII anonymization, secure document/image processing, OCR, and privacy safeguards.',
+      technologies: ['OpenAI', 'Claude', 'Mistral', 'OCR', 'PII Anonymization', 'VPS'],
+      icon: ShieldCheck,
+      gradient: 'bg-gradient-to-br from-violet-500 to-fuchsia-600',
+      link: '#',
+    },
     {
       title: 'Communication Tool-like Slack',
       description:
@@ -334,7 +364,7 @@ function App() {
   ];
 
   const experience = [
-    { position: 'AI / Python Engineer', company: 'Insightlix (Private) Limited', duration: 'Jan 2026 – July 2026', isCurrent: false },
+    { position: 'AI / Python Engineer', company: 'Tron AI', duration: 'Jan 2026 – Present', isCurrent: true },
     { position: 'Associate Data Scientist', company: 'Programmer Force', duration: 'June 2025 – Dec 2025', isCurrent: false },
     { position: 'AI Engineer Intern', company: 'Octaloop Technologies', duration: 'March 2025 - May 2025', isCurrent: false },
     { position: 'Machine Learning Intern', company: 'PITB', duration: 'Dec 2024 – Jan 2025', isCurrent: false },
@@ -381,7 +411,7 @@ function App() {
                 {[
                   { number: 'AI', label: 'Specialist' },
                   { number: '15+', label: 'Projects Built' },
-                  { number: '1.5', label: 'Years Experience' },
+                  { number: '2', label: 'Years Experience' },
                   { number: '100%', label: 'Dedication' },
                 ].map((stat, index) => (
                   <motion.div
